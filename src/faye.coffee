@@ -1,4 +1,4 @@
-{Robot, Adapter, TextMessage, EnterMessage, LeaveMessage, Response} = require require.main.filename.replace(/hubot$/, ".." )
+{Robot, Adapter, TextMessage, EnterMessage, LeaveMessage, Response} = require 'hubot'
 
 Check = require('validator').check
 Sanitize = require('validator').sanitize
@@ -75,6 +75,8 @@ exports.use = (robot) ->
   new FayeAdapter robot
 
 class FayeClient extends EventEmitter
+
+  self = @
 
   constructor: (options) ->
     @options = options
