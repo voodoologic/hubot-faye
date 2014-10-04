@@ -12,7 +12,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/nna/hubot-faye.git"
+    "url": "git://github.com/voodoologic/hubot-faye.git"
   },
   "dependencies": {
     "faye":"0.8.8",
