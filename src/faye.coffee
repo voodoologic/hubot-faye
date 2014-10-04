@@ -2,7 +2,7 @@
 
 Check = require('validator').check
 Sanitize = require('validator').sanitize
-Config = require("#{__dirname}/config.coffee")
+# Config = require("#{__dirname}/config.coffee")
 
 Faye = require 'faye'
 Fs = require 'fs'
