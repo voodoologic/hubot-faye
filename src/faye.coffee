@@ -85,7 +85,7 @@ class FayeClient extends EventEmitter
       throw Error('You need to set HUBOT_FAYE_SERVER env vars for faye to work')
 
     @client = new Faye.Client options.server + ':' + options.port + '/' + options.path
-    @client.addExtension require("./faye_extensions/client_auth")
+    # @client.addExtension require("./faye_extensions/client_auth")
 
   subscribe: (room)->
     chat_subscription = @client.subscribe "#{room}", (message) =>
